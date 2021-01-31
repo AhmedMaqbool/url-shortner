@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }))
 dotenv.config();
 
 mongoose
-  .connect(`mongodb+srv://new_user404:${process.env.db_password}@cluster0.qncik.mongodb.net/url-shortner?retryWrites=true&w=majority;`, {
+  .connect(`mongodb+srv://new_user404:${process.env.db_password}@cluster0.qncik.mongodb.net/url-shortner?retryWrites=true&w=majority`, {
     
     useNewUrlParser: true,
     useUnifiedTopology: true,
