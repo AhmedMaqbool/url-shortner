@@ -75,4 +75,5 @@ app.use((err, req, res, next) => {
   res.render('index', { error: err.message })
 })
 
-app.listen(3000, () => console.log('🌏 on port 3000...'))
+const PORT=process.env.PORT||5000
+app.listen(PORT, () => console.log('🌏 on port 3000...'))
